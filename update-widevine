@@ -1,0 +1,35 @@
+#!/bin/bash
+# Based on Vivaldi's update-widevine script - https://vivaldi.com - Modified 21/12/2019 for Solus
+#
+# This script will install/update libwidevinecdm.so so chromium based browsers do not need Google Chrome installed in order to piggy back on its widevine
+
+WIDEVINE_INSTALL_DIR="/opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/"
+TMP_DIR="/tmp/widevine_tmp"
+sudo mkdir -p "$WIDEVINE_INSTALL_DIR"
+
+WIDEVINE_VERSION="${WIDEVINE_VERSION:-$(wget -qO- https://dl.google.com/widevine-cdm/versions.txt | tail -n1)}"
+
+if [ -z "$WIDEVINE_VERSION" ]; then
+  echo "Could not work out the latest version; exiting" >&2
+  exit 1
+elif [ -e "$WIDEVINE_INSTALL_DIR/widevine-$WIDEVINE_VERSION" ] ; then
+  echo "The latest Widevine ($WIDEVINE_VERSION) is already installed"
+  exit 0
+else
+  sudo rm "$WIDEVINE_INSTALL_DIR/libwidevinecdm.so" "$WIDEVINE_INSTALL_DIR/widevine-*"
+  sudo touch "$WIDEVINE_INSTALL_DIR/widevine-$WIDEVINE_VERSION"
+
+  mkdir -p "$TMP_DIR"
+  cd "$TMP_DIR"
+
+  wget "https://dl.google.com/widevine-cdm/${WIDEVINE_VERSION}-linux-x64.zip"
+  unzip "${WIDEVINE_VERSION}-linux-x64.zip"
+
+  sudo install -Dm00644 libwidevinecdm.so /opt/google/chrome/WidevineCdm/_platform_specific/linux_x64/
+  sudo install -Dm00644 manifest.json /opt/google/chrome/WidevineCdm/
+  sudo install -Dm00644 LICENSE.txt /opt/google/chrome/WidevineCdm/
+
+  rm "${WIDEVINE_VERSION}-linux-x64.zip" libwidevinecdm.so manifest.json LICENSE.txt
+
+  echo "Widevine ($WIDEVINE_VERSION) installed successfully. Please restart your web browser(s)"
+fi

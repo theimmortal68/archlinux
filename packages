@@ -7,12 +7,13 @@ zotero
 yay
 bitwarden-bin
 systemd-kcm
-firefox-opensuse
+firefox-kde-opensuse
 breeze-gtk
 kde-gtk-config
 xdg-desktop-portal
 xdg-desktop-portal-kde
 plasma-browser-integration
+flashplugin
 
 [Printer Support]
 cups

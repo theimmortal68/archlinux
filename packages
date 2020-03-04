@@ -1,4 +1,3 @@
-alltray (alltray -H) From Manjaro Community or AUR with https://github.com/bill-auger/alltray
 libreoffice-impress-templates
 onedrive-abraunegg-git
 profile-sync-daemon
@@ -7,13 +6,10 @@ zotero
 yay
 bitwarden-bin
 systemd-kcm
-firefox-kde-opensuse
-breeze-gtk
-kde-gtk-config
-xdg-desktop-portal
-xdg-desktop-portal-kde
 plasma-browser-integration
-flashplugin
+chromium-vaapi
+tilda
+fish
 
 [Printer Support]
 cups
@@ -34,7 +30,6 @@ vulkan-radeon
 mesa-vdpau
 libvdpau
 libva-vdpau-driver
-
 
 [CPU Support]
 amd-ucode

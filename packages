@@ -1,3 +1,11 @@
+libreoffice-fresh
+jre-openjdk
+libmythes
+mythes-en
+hunspell
+hunspell-en_US
+hyphen
+hyphen-en
 libreoffice-impress-templates
 onedrive-abraunegg-git
 profile-sync-daemon
@@ -5,9 +13,10 @@ ttf-ms-fonts
 zotero
 yay
 bitwarden-bin
-systemd-kcm
 plasma-browser-integration
-chromium-vaapi
+chromium-vaapi-bin
+chromium-widevine
+pepper-flash
 tilda
 fish
 
@@ -21,15 +30,15 @@ print-manager
 system-config-printer
 
 [Video Support]
-xf86-video-ati
 xf86-video-amdgpu
 libva
 libva-mesa-driver
 mesa
 vulkan-radeon
+amdvlk
 mesa-vdpau
 libvdpau
-libva-vdpau-driver
+libva-vdpau-driver-chromium
 
 [CPU Support]
 amd-ucode

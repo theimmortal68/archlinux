@@ -13,12 +13,11 @@ ttf-ms-fonts
 zotero
 yay
 bitwarden-bin
-plasma-browser-integration
 chromium-vaapi-bin
 chromium-widevine
 pepper-flash
-tilda
 fish
+modprobed-db
 
 [Printer Support]
 cups

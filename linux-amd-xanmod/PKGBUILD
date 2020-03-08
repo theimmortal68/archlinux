@@ -53,18 +53,11 @@ prepare() {
   scripts/config --enable CONFIG_IKCONFIG \
                  --enable CONFIG_IKCONFIG_PROC
 
-  # Disable tracers
-    scripts/config --disable CONFIG_FUNCTION_TRACER \
-                   --disable CONFIG_STACK_TRACER
-
-  # Disabling NUMA
-    scripts/config --disable CONFIG_NUMA
-
   # Enable BMQ CPU scheduler by default..."
     scripts/config --enable CONFIG_SCHED_PDS
 
   # Disable CONFIG_USER_NS_UNPRIVILEGED"
-    scripts/config --enable CONFIG_USER_NS_UNPRIVILEGED
+    scripts/config --disable CONFIG_USER_NS_UNPRIVILEGED
 
   ### Optionally load needed modules for the make localmodconfig
   # See https://aur.archlinux.org/packages/modprobed-db

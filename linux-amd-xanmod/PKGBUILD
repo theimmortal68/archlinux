@@ -54,7 +54,7 @@ prepare() {
                  --enable CONFIG_IKCONFIG_PROC
 
   # Enable BMQ CPU scheduler by default..."
-    scripts/config --enable CONFIG_SCHED_PDS
+    scripts/config --enable CONFIG_SCHED_BMQ
 
   # Disable CONFIG_USER_NS_UNPRIVILEGED"
     scripts/config --disable CONFIG_USER_NS_UNPRIVILEGED

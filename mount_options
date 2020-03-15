@@ -1,0 +1,1 @@
+noatime,compress=lzo,space_cache,commit=120,ssd

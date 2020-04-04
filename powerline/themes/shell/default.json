@@ -8,7 +8,8 @@
       {
         "function": "powerline.segments.common.net.hostname",
         "args": {
-          "only_if_ssh": false
+          "only_if_ssh": true,
+          "exclude_domain": true
         },
         "priority": 10
       },
@@ -22,6 +23,9 @@
       },
       {
         "function": "powerline.segments.shell.cwd",
+        "args": {
+          "use_path_separator": true
+        },
         "priority": 10
       },
       {
@@ -31,9 +35,7 @@
       {
         "function": "powerline.segments.shell.last_pipe_status",
         "priority": 10
-      }
-    ],
-  "right": [
+      },
       {
         "function": "powerline_gitstatus.gitstatus",
         "priority": 10

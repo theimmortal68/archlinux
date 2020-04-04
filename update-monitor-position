@@ -1,3 +1,0 @@
-#!/bin/bash
-
-xrandr --output XWAYLAND-2 --pos 3840x0 --output XWAYLAND-3 --primary --pos 0x0

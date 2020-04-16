@@ -6,3 +6,4 @@ pacman-key --recv-key 5EE46C4C
 pacman-key --lsign-key 5EE46C4C
 pacman-key --recv-key BBFE2FD421597395E4FC8C8DF6C85FEE79D661A4
 pacman-key --lsign-key BBFE2FD421597395E4FC8C8DF6C85FEE79D661A4
+pacman -Syy && sudo pacman -S archlinuxcn-keyring

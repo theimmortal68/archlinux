@@ -1,5 +1,5 @@
 [/]
-application-shortcuts-list=[['Software', 'org.gnome.Software-symbolic', 'ArcMenu_Software'], ['Settings', 'preferences-system-symbolic', 'gnome-control-center'], ['Tweaks', 'org.gnome.tweaks-symbolic', 'gnome-tweaks'], ['Chromium', 'chromium', 'chromium.desktop'], ['LibreOffice Writer', 'libreoffice-writer', 'libreoffice-writer.desktop']]
+application-shortcuts-list=[['Software', 'org.gnome.Software-symbolic', 'ArcMenu_Software'], ['Settings', 'preferences-system-symbolic', 'gnome-control-center'], ['Tweaks', 'org.gnome.tweaks-symbolic', 'gnome-tweaks'], ['Chromium', 'web-browser-symbolic.symbolic', 'chromium.desktop'], ['LibreOffice Writer', 'text-editor-symbolic.symbolic', 'libreoffice-writer.desktop']]
 arc-menu-placement='DTP'
 avatar-style='Circular'
 border-color='rgb(41,50,55)'

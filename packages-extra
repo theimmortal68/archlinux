@@ -13,10 +13,15 @@ ttf-ms-fonts
 zotero
 yay
 bitwarden-bin
-chromium-vaapi-bin
+chromium
 chromium-widevine
 pepper-flash
 fish
 modprobed-db
 gnome-boxes
 virt-manager
+micro
+powerline
+powerline-fonts
+
+pip install powerline-gitstatus

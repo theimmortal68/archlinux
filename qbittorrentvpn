@@ -1,0 +1,25 @@
+sudo docker run -d \
+    --privileged=true \
+    -p 6881:6881 \
+    -p 6881:6881/udp \
+    -p 8080:8080 \
+    -p 8118:8118 \
+    --name=qbittorrentvpn \
+    -v /opt/docker/data:/data \
+    -v /opt/docker/config:/config \
+    -v /etc/localtime:/etc/localtime:ro \
+    -v /mnt:/mnt \
+    -e VPN_ENABLED=yes \
+    -e VPN_USER=p1449280 \
+    -e VPN_PASS=JamesCS050417 \
+    -e VPN_PROV=pia \
+    -e STRICT_PORT_FORWARD=yes \
+    -e ENABLE_PRIVOXY=no \
+    -e LAN_NETWORK=192.168.1.0/24 \
+    -e NAME_SERVERS=209.222.18.222,84.200.69.80,37.235.1.174,1.1.1.1,209.222.18.218,37.235.1.177,84.200.70.40,1.0.0.1 \
+    -e DEBUG=false \
+    -e WEBUI_PORT=8080 \
+    -e UMASK=002 \
+    -e PUID=969 \
+    -e PGID=969 \
+    binhex/arch-qbittorrentvpn

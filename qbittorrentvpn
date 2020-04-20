@@ -22,4 +22,5 @@ sudo docker run -d \
     -e UMASK=002 \
     -e PUID=969 \
     -e PGID=969 \
+    --restart=always \
     binhex/arch-qbittorrentvpn

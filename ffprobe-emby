@@ -78,4 +78,4 @@ while(($line) = $output =~ m%^(.*?)\n%){
 }
 
 close(LOG);
-print $output;⏎ 
+print $output;

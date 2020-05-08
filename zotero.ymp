@@ -1,0 +1,53 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE Tumbleweed">
+    <repositories>
+      <repository recommended="true">
+        <name>home:lukehannan</name>
+        <summary></summary>
+        <description>Miscellaneous packages that I keep because I don't like adding repositories.</description>
+        <url>http://download.opensuse.org/repositories/home:/lukehannan/openSUSE_Tumbleweed/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Factory/snapshot/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Tumbleweed/standard/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Factory/ports/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>zotero</name>
+        <summary>Tool to help collect, organize, cite, and share research sources</summary>
+        <description>Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

@@ -1,0 +1,73 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE Tumbleweed">
+    <repositories>
+      <repository recommended="true">
+        <name>home:ComputerSmurf:Extras</name>
+        <summary></summary>
+        <description></description>
+        <url>http://download.opensuse.org/repositories/home:/ComputerSmurf:/Extras/openSUSE_Tumbleweed/</url>
+      </repository>
+      <repository recommended="true">
+        <name>devel:languages:python</name>
+        <summary>Python Modules</summary>
+        <description>This project provides generic python modules. The Python interpreter itself is developed at devel:languages:python:Factory.
+
+If you happen to have collection of python packages send an email to opensuse-packaging to discuss wether it would not be better to provide them subproject within devel:languages:python namespace instead of storing them here.
+
+The Python packaging policies are found at http://en.opensuse.org/openSUSE:Packaging_Python and https://en.opensuse.org/openSUSE:Packaging_Python_Singlespec
+
+The project is focused on maintaining reasonable closeness to upstream
+versions while at the same time trying to make packages available for openSUSE distribution.
+
+The main focus is openSUSE Tumbleweed and packages that are not in there will be periodically pruned from the project.
+
+Backporting of packages against older distribution releases should not be happening in this project, only build verification. If a package is needed on any of the older openSUSE products then maintenance update is to be created. Alternatively for SLE products submission by an interested party should be done by openSUSE:Backports project.
+If you just need the newest packages, please consider using devel:languages:python:backports instead.
+
+This is due to the size of this project and likeness of errors caused by adding this whole repository.</description>
+        <url>http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Tumbleweed/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Factory/snapshot/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Tumbleweed/standard/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Factory/ports/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>msttcore-fonts</name>
+        <summary>Microsoft's Core Fonts for the Web and Cleartype Fonts</summary>
+        <description>This package contains Microsoft True Type Core Fonts for the Web</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

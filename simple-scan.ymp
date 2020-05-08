@@ -1,0 +1,31 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE Tumbleweed">
+    <repositories>
+      <repository recommended="true">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>http://download.opensuse.org/tumbleweed/repo/oss/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>simple-scan</name>
+        <summary>Simple Scanning Utility</summary>
+        <description>Simple Scan is an easy-to-use application, designed to let users connect
+their scanner and quickly have the image/document in an appropriate
+format.
+
+Simple Scan is basically a frontend for SANE - which is the same backend
+as XSANE uses. This means that all existing scanners will work and the
+interface is well tested.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

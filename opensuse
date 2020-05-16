@@ -1,2 +1,2 @@
 sudo zypper ar https://repo.vivaldi.com/archive/vivaldi-suse.repo
-sudo zypper in libnotify-devel dmd phobos-devel-static vivaldi-static xdotool xf86-video-amdgpu
+sudo zypper in libnotify-devel dmd phobos-devel-static vivaldi-stable xdotool xf86-video-amdgpu git libcurl-devel sqlite3-devel go

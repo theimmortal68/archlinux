@@ -1,2 +1,3 @@
 sudo zypper ar https://repo.vivaldi.com/archive/vivaldi-suse.repo
-sudo zypper in libnotify-devel dmd phobos-devel-static vivaldi-stable xdotool xf86-video-amdgpu git libcurl-devel sqlite3-devel go
+sudo zypper in libnotify-devel dmd phobos-devel-static vivaldi-stable xdotool xf86-video-amdgpu git libcurl-devel sqlite3-devel go pam_kwallet xclip yakuake git fish powerline powerline-fonts terminus-bitmap-fonts mlocate kfind kgpg kio-gdrive epson-inkjet-printer-escpr kio-fuse simple-scan
+sudo zypper rm skanlite

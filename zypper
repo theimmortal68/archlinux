@@ -1,0 +1,28 @@
+Repository priorities in effect: (See 'zypper lr -P' for details)
+      90 (raised priority)  :  2 repositories
+      99 (default priority) : 14 repositories
+
+#  | Alias                                | Name                                                 | Enabled | GPG Check | Refresh
+---+--------------------------------------+------------------------------------------------------+---------+-----------+--------
+ 1 | Mozilla                              | Mozilla                                              | Yes     | (r ) Yes  | Yes
+ 2 | Virtualization_containers            | Virtualization:containers (openSUSE_Leap_15.1)       | Yes     | (r ) Yes  | No
+ 3 | dvd                                  | dvd                                                  | Yes     | (r ) Yes  | Yes
+ 4 | home_olh                             | olh's Home Project (openSUSE_15.2)                   | Yes     | (r ) Yes  | No
+ 5 | http-download.opensuse.org-1aac6bb6  | openSUSE:Leap:15.2:Update                            | Yes     | (r ) Yes  | Yes
+ 6 | https-download.opensuse.org-58d5ad6b | home:olh                                             | Yes     | (r ) Yes  | Yes
+ 7 | libnvidia-container                  | libnvidia-container                                  | Yes     | (r ) Yes  | No
+ 8 | nvidia-container-runtime             | nvidia-container-runtime                             | Yes     | (r ) Yes  | No
+ 9 | nvidia-docker                        | nvidia-docker                                        | Yes     | (r ) Yes  | No
+10 | openSUSE-Leap-15.2-1                 | openSUSE-Leap-15.2-1                                 | Yes     | (r ) Yes  | Yes
+11 | packman                              | packman                                              | Yes     | (r ) Yes  | Yes
+12 | repo-debug                           | Debug Repository                                     | No      | ----      | ----
+13 | repo-debug-non-oss                   | Debug Repository (Non-OSS)                           | No      | ----      | ----
+14 | repo-debug-update                    | Update Repository (Debug)                            | No      | ----      | ----
+15 | repo-debug-update-non-oss            | Update Repository (Debug, Non-OSS)                   | No      | ----      | ----
+16 | repo-non-oss                         | Non-OSS Repository                                   | Yes     | (r ) Yes  | Yes
+17 | repo-oss                             | Main Repository                                      | Yes     | (r ) Yes  | Yes
+18 | repo-source                          | Source Repository                                    | No      | ----      | ----
+19 | repo-source-non-oss                  | Source Repository (Non-OSS)                          | No      | ----      | ----
+20 | repo-update                          | Main Update Repository                               | Yes     | (r ) Yes  | Yes
+21 | repo-update-non-oss                  | Update Repository (Non-Oss)                          | Yes     | (r ) Yes  | Yes
+22 | shells_fish_release_3                | Fish shell - 3.x release series (openSUSE_Leap_15.2) | Yes     | (r ) Yes  | No

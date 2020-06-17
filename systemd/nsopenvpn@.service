@@ -1,0 +1,21 @@
+[Unit]
+Description=Namespaced OpenVPN connection to %i
+Before=systemd-user-sessions.service
+After=network-online.target
+Wants=network-online.target
+Documentation=https://github.com/slingamn/namespaced-openvpn
+
+[Service]
+Type=notify
+WorkingDirectory=/etc/openvpn
+RuntimeDirectory=namespaced-openvpn
+ExecStart=/usr/local/sbin/namespaced-openvpn --namespace %i --daemon nsovpn-%i --status /run/namespaced-openvpn/%i.status 10 --cd /etc/openvpn --script-security 2 --config /etc/openvpn/%i.conf --writepid /run/namespaced-openvpn/%i.pid
+ExecStartPost=/etc/openvpn/gw.sh
+PIDFile=/run/namespaced-openvpn/%i.pid
+KillMode=process
+ExecReload=/bin/kill -HUP $MAINPID
+RestartSec=5s
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

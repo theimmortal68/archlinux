@@ -1,0 +1,18 @@
+[Unit]
+Description=Jackett Service
+After=network.target
+
+[Service]
+User=jauschua
+Group=users
+SyslogIdentifier=jackett
+Restart=always
+RestartSec=5
+Type=simple
+Environment=XDG_CONFIG_HOME=/var/lib/jackett
+WorkingDirectory=/opt/Jackett
+ExecStart=/opt/Jackett/jackett --NoRestart --DataFolder /var/lib/jackett
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

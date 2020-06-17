@@ -1,0 +1,20 @@
+[Unit]
+Description=Sonarr Service
+Wants=network-online.target qbittorrent-nox.service
+After=network-online.target qbittorrent-nox.service
+Requires=qbittorrent-nox.service
+
+[Service]
+User=jauschua
+Group=users
+ExecStart=/usr/bin/mono --debug /opt/Sonarr/Sonarr.exe -nobrowser -data=/var/lib/sonarr
+Type=simple
+TimeoutStopSec=20
+SyslogIdentifier=sonarr
+
+# Lets built in updater work well.
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

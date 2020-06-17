@@ -1,0 +1,19 @@
+[Unit]
+Description=Radarr Service
+Wants=network-online.target qbittorrent-nox.service
+After=network-online.target qbittorrent-nox.service
+Requires=qbittorrent-nox.service
+
+[Service]
+User=jauschua
+Group=users
+ExecStart=/opt/Radarr/Radarr -nobrowser -data=/var/lib/radarr
+Type=simple
+TimeoutStopSec=20
+
+# Lets built in updater work well.
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
